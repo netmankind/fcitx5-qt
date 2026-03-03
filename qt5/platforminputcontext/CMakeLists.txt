@@ -25,6 +25,7 @@ endif()
 
 add_library(fcitx5platforminputcontextplugin ${PLUGIN_LIBRARY_TYPE} ${plugin_SRCS})
 set_target_properties(fcitx5platforminputcontextplugin PROPERTIES
+                        OUTPUT_NAME fcitx5platforminputcontextplugin-qt${Qt5_VERSION}
                          AUTOMOC TRUE
                         )
 target_include_directories(fcitx5platforminputcontextplugin PRIVATE ${Qt5Gui_PRIVATE_INCLUDE_DIRS} "${PROJECT_SOURCE_DIR}/common")
